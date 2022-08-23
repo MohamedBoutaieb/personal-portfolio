@@ -1,0 +1,10 @@
+.App{
+    height : 100vh;
+    .sections{
+        width : 100%;
+        height :calc(100vh - 70 px) ;
+        background-color:lightsalmon;
+        position: relative;
+        top : 70px;
+    }
+}
