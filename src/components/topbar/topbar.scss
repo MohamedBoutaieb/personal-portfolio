@@ -1,7 +1,26 @@
+@import "../../global.scss";
+
 .topbar{
     width: 100%;
     height: 70px;
-    background-color: #15023a;
+    background-color: white;
+    color:  $mainColor;
     position: fixed;
     top:0 ;
+    z-index: 2;
+    .wrapper{
+        padding: 10px 30px;    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left{
+            .logo{
+                font-size: 40px;
+                font-weight: 700;
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
 }

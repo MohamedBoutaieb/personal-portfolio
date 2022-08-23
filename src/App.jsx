@@ -7,9 +7,10 @@ import Contact from "./components/contact/Contact.jsx"
 import "./app.scss"
 function App() {
   return (
-    <div className="App">
-      <Topbar/>
+    <div className="app">
+      <Topbar/> 
       <div className="sections">
+  
         <Intro/>
         <Portfolio/>
         <Works />
