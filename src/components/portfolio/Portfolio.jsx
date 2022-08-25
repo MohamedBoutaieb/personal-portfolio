@@ -1,6 +1,7 @@
 import {useState, React } from 'react';
 import PortfolioList from '../portfoliolist/PortfolioList';
 import "./portfolio.scss";
+import  {featuredPortfolio} from '../../data.js';
 export default function Portfolio() {
   const [selected,setSelected] = useState("featured")
   const projectList = [
@@ -15,7 +16,7 @@ export default function Portfolio() {
     {
       id: "featured3",
       title: "Featured"
-    },
+     },
     {
       id: "featured4",
       title: "Featured"
@@ -39,30 +40,15 @@ export default function Portfolio() {
       }  
       </ul>  
       <div className="container">
-        <div className="item">
-          <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" />
-          <h3>banking app</h3>
-        </div>
-        <div className="item">
-          <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" />
-          <h3>banking app</h3>
-        </div>
-        <div className="item">
-          <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" />
-          <h3>banking app</h3>
-        </div>
-        <div className="item">
-          <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" />
-          <h3>banking app</h3>
-        </div>
-        <div className="item">
-          <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" />
-          <h3>banking app</h3>
-        </div>
-        <div className="item">
-          <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" />
-          <h3>banking app</h3>
-        </div>
+        { featuredPortfolio.map( (item)=> {
+          return ( 
+                     <div className="item">
+                        <img src={item.img} alt="" />
+                        <h3>{item.title}</h3>
+                    </div>
+                    )
+        })}
+   
       </div>
     </div>
   )
