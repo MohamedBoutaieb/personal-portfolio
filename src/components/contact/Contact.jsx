@@ -47,8 +47,9 @@ export default function Contact() {
         <div className= "ressources mail">
           <img src ="assets/mail.png" alt/>
           <a onClick = {()=>setMail(true) } className={!mail ?"active":"inactive"}>Institutional Mail</a>
-         <span className= {mail ?"active":"inactive"} onClick = {()=>setMail(false)}>mohamed.boutaieb@insat.ucar.tn</span> 
+         <div className= {mail ?"active email":"inactive email"} onClick = {()=>setMail(false)}>mohamed.boutaieb@insat.ucar.tn</div> 
         </div>
+        <span></span>
        
         </div>
     </div>

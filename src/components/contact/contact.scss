@@ -1,3 +1,4 @@
+@import "../../global.scss";
 .contact {
     background-color: white;
     display:flex;
@@ -12,7 +13,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-      
+        z-index: 3s;
         .ressources{
             flex:1;
             font-size: 20px;
@@ -35,9 +36,7 @@
                 position: relative;
             }
             &.mail{
-                
-            span{
-                z-index: 2;
+            div{
                 transform:translateX(300px);
                 &.active{
                     transition : 2s ;
@@ -48,17 +47,33 @@
                .active{
                 opacity: 1;
                 transition: 1s;
+                
                }
                .inactive{
                     transition : 1s;
                     opacity: 0;
                }
             }
+            @include  mobile {
+                &.mail{
+                   display: none;
+                    }
+                }
+            
         }
         
         h2{
             font-size: 40px;
         }
+        @include mobile {
+            span::after{
+                content: "mohamed.boutaieb@insat.ucar.tn";
+                font-size: 15px;
+                margin-bottom: 100px;
+                transform : translateX(100px);
+               }
+        }
+        
         /*form{
             width: 70%;
             height:70%;
