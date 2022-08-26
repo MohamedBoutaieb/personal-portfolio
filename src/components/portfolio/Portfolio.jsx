@@ -24,10 +24,6 @@ export default function Portfolio() {
     {
       id: "featured5",
       title: "Featured"
-    },
-    {
-      id: "featured6",
-      title: "Featured"
     }
   ]
   return (

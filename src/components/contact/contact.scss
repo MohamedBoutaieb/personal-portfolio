@@ -1,3 +1,94 @@
 .contact {
-    background-color: lightblue;
+    background-color: white;
+    display:flex;
+    overflow: hidden;
+    font-size: 40px;
+    .left{
+        flex:1;
+    }
+    .right{
+        flex:1;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      
+        .ressources{
+            flex:1;
+            font-size: 20px;
+            display : flex;
+            align-items: center;
+            justify-content: center;
+            
+            color : crimson;
+            transition: all 1s;
+            img {
+                width : 30px;
+                margin :0px 20px;
+                background-color:white;
+            }
+            a{
+                text-decoration: none;
+                color : crimson;
+                margin-right: 10px;
+                cursor: pointer;
+                position: relative;
+            }
+            &.mail{
+                
+            span{
+                z-index: 2;
+                transform:translateX(300px);
+                &.active{
+                    transition : 2s ;
+                    transform:translateX(-160px);
+                }        
+               }
+               transform:translateX(150px);
+               .active{
+                opacity: 1;
+                transition: 1s;
+               }
+               .inactive{
+                    transition : 1s;
+                    opacity: 0;
+               }
+            }
+        }
+        
+        h2{
+            font-size: 40px;
+        }
+        /*form{
+            width: 70%;
+            height:70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            input{
+                width: 300px;
+                height:30px;
+                font-size: 14px;
+            }
+
+            textarea{
+                width: 300px;
+                height: 200px;
+            }
+            button{
+                width: 150px;
+                height :30px;
+                color:white;
+                background-color:crimson;
+                border: 0;
+                border-radius:10px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+            span{
+                color : green;
+            }
+        }*/
+    }
 }

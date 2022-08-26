@@ -6,6 +6,9 @@
     align-items: center;
     h1{
         font-size:60px;
+        @include mobile{
+            font-size:20px;   
+        }
     }
     ul{
         margin : 10px;
@@ -13,6 +16,12 @@
         list-style: none;
         display : flex;  
         margin-left: 0px;
+        @include mobile{
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0;  
+            margin-top: 20px;
+        }
         li{
             font-size: 14px;
             margin-right : 50px;
@@ -22,6 +31,10 @@
             &.active{
                 background-color: $mainColor;
                 color :white;
+            }
+            @include mobile{
+                
+                margin-right : 20px; 
             }
         }
         li:last-child{
@@ -34,6 +47,10 @@
         align-items: center;
         justify-content: center;
         flex-wrap : wrap;
+        @include mobile{
+           width:100%; 
+           margin-top: 100px;  
+        }
         .item{
             width : 220px;
             height : 150px;
@@ -48,9 +65,16 @@
             transition: 1s; 
             cursor: pointer;
             
+            @include mobile{
+                width:150px;
+                height:100px;
+                margin: 10px 10px;
+             }
+
             h3{
                 position: absolute;
                 font-size: 20px;
+                text-align:center;
             }
             img{
                 width : 100%;
