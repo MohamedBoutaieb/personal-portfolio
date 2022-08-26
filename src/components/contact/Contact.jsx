@@ -44,7 +44,7 @@ export default function Contact() {
           <img src ="assets/github.png" alt/>
           <a href=" https://github.com/MohamedBoutaieb"target="_blank"> GitHub Account</a>  
         </div>
-        <div className= "ressources mail">
+        <div className= {mail ?"ressources mail active":"ressources mail"}>
           <img src ="assets/mail.png" alt/>
           <a onClick = {()=>setMail(true) } className={!mail ?"active":"inactive"}>Institutional Mail</a>
          <div className= {mail ?"active email":"inactive email"} onClick = {()=>setMail(false)}>mohamed.boutaieb@insat.ucar.tn</div> 

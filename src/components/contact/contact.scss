@@ -4,8 +4,14 @@
     display:flex;
     overflow: hidden;
     font-size: 40px;
+    @include mobile{
+        flex-direction: column;
+    }
     .left{
         flex:1;
+        @include mobile{
+            overflow: hidden;
+        }
     }
     .right{
         flex:1;
@@ -36,6 +42,11 @@
                 position: relative;
             }
             &.mail{
+            &.active{
+                @include mobile{
+                    margin-left : -150px;
+                }
+            }
             div{
                 transform:translateX(300px);
                 &.active{
@@ -47,18 +58,13 @@
                .active{
                 opacity: 1;
                 transition: 1s;
-                
                }
                .inactive{
                     transition : 1s;
                     opacity: 0;
                }
             }
-            @include  mobile {
-                &.mail{
-                   display: none;
-                    }
-                }
+            
             
         }
         
@@ -67,7 +73,7 @@
         }
         @include mobile {
             span::after{
-                content: "mohamed.boutaieb@insat.ucar.tn";
+                content: "Phone : +21655366389";
                 font-size: 15px;
                 margin-bottom: 100px;
                 transform : translateX(100px);

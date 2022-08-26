@@ -1,15 +1,15 @@
 import React from 'react'
 import "./topbar.scss"
-import {Person,Mail} from "@material-ui/icons"
+import {Person,Mail,Home} from "@material-ui/icons"
 export default function Topbar(props) {
   return (
     <div className={"topbar "+ (props.menuOpen && "active")}>
       <div className="wrapper">
         <div className="left">
-          <a href="#intro" className="logo">.genius</a>
+          <a href="#intro" className="logo"><Home className="Home"/></a>
           <div className="itemContainer">
             <Person className="icon"/>
-            <span> +phone number</span>
+            <span> +216 55 3366 389</span>
           </div>
           <div className="itemContainer">
             <Mail className="icon"/>
