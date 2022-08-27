@@ -49,10 +49,11 @@ export default function Works() {
   return (
     <div className="works"  id="works">
        <div className="slider" style = {{transform:`translateX(-${currentSlider*100}vw)`}}>
+       <div className="container">
         {data.map(
           item =>(
 
-         <div className="container">
+  
           <div className="item">
             <div className="left">
               <div className="leftContainer">
@@ -70,9 +71,9 @@ export default function Works() {
               <img src={item.img} alt="" />
             </div>
           </div>
-        </div>
+        
          )
-         )}
+         )}</div>
       </div>
       <img src="assets/arrow.png" className="arrow right" onClick = {()=>setCurrentSlider((currentSlider+1) %5)} />
       <img src="assets/arrow.png" className="arrow left" onClick = {()=>setCurrentSlider((currentSlider-1 +5) %5)}/>
