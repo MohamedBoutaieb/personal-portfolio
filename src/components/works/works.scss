@@ -45,6 +45,8 @@
         justify-content: center;
         @include mobile{
           transform: translateY(40px);
+          
+          flex-direction: column;
         }
 
         .item {
@@ -57,24 +59,33 @@
             justify-content: center;
             @include mobile{
                 width: 90%;
-                height:150px;
+                height:200px;
                 margin:5px 0;
             }
             .left {
-
+                
                 flex: 4;
                 height: 70%;
                 align-items: center;
                 justify-content: center;
                 margin-left: 20px;
-
+                @include mobile{
+                    flex-direction: column;
+                    justify-content:space-between;
+                    flex: 6;
+                    height : 90%;
+                }
                 .leftContainer {
                     width: 90%;
                     height: 70%;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
-
+                    @include mobile{
+                        flex-direction: column;
+                        justify-content:space-between;
+                        height : 100%;
+                    }  
                     .imgContainer {
                         width: 40px;
                         height: 40px;
@@ -83,6 +94,9 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        @include mobile{
+                            display:none;
+                        }  
                     }
 
                     img {
@@ -92,10 +106,18 @@
 
                 h2 {
                     font-size: 20px;
+                    @include mobile{
+                        font-size: 18px;
+                        overflow: hidden;
+                    }
                 }
 
                 p {
                     font-size: 13px;
+                    @include mobile{
+                        font-size: 12px;
+                        overflow: hidden;
+                    }
                 }
 
                 span {
