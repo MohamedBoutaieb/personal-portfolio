@@ -59,7 +59,7 @@
             justify-content: center;
             @include mobile{
                 width: 90%;
-                height:200px;
+                height:210px;
                 margin:5px 0;
             }
             .left {
@@ -107,16 +107,16 @@
                 h2 {
                     font-size: 20px;
                     @include mobile{
-                        font-size: 18px;
+                        font-size: 14px;
                         overflow: hidden;
+                        text-align: center;
                     }
                 }
 
                 p {
-                    font-size: 13px;
+                    font-size: 12px;
                     @include mobile{
                         font-size: 12px;
-                        overflow: hidden;
                     }
                 }
 
@@ -143,9 +143,12 @@
                 img {
                     width: 400px;
                     height: 100%;
-                   
                     box-shadow:5px 5px 5px  grey ;
                     transform: translateX(30px) rotate(-10deg);
+                    @include mobile{
+                        width:  200px;
+                        height: 100%;
+                    }
                 }
             }
 

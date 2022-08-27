@@ -63,7 +63,7 @@ export default function Works() {
                  <p>
                  {item.desc}
                  </p>
-                 <span><a href={item.about}>About</a></span>
+                 <span><a href={item.about} target="_blank">About</a></span>
               </div>
             </div>
             <div className="right">
