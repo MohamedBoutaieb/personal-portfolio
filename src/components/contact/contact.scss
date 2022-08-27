@@ -11,6 +11,7 @@
         flex:1;
         @include mobile{
             overflow: hidden;
+            
         }
     }
     .right{
@@ -45,10 +46,12 @@
             &.active{
                 @include mobile{
                     margin-left : -165px;
+                    outline: none;
                 }
             }
             div{
                 transform:translateX(300px);
+                outline: none;
                 &.active{
                     transition : 2s ;
                     transform:translateX(-160px);

@@ -52,6 +52,7 @@
            margin-top: 50px;  
         }
         .item{
+            outline: none;
             width : 220px;
             height : 150px;
             border-radius : 20px;
@@ -69,6 +70,7 @@
                 width:150px;
                 height:100px;
                 margin: 10px 10px;
+                outline: none;
              }
 
             h3{
@@ -89,6 +91,7 @@
                 img {
                     opacity :0.3;
                     z-index: 2;
+                    outline: none;
                 }
                 h3{
                   z-index: 3;
