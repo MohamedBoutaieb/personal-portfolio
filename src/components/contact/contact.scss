@@ -23,10 +23,7 @@
         z-index: 3s;
         .ressources{
             flex:1;
-            font-size: 40px;
-            @include mobile{
-                font-size: 20px;
-            }
+            font-size: 20px;
             display : flex;
             align-items: center;
             justify-content: center;
@@ -34,9 +31,9 @@
             color : crimson;
             transition: all 1s;
             img {
-                width : 60px;
+                width : 50px;
                 @include mobile{
-                    width : 30px; 
+                    width : 30px;
                 }
                 margin :0px 20px;
                 background-color:white;
