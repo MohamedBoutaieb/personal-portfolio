@@ -3,27 +3,11 @@ import PortfolioList from '../portfoliolist/PortfolioList';
 import "./portfolio.scss";
 import  {featuredPortfolio} from '../../data.js';
 export default function Portfolio() {
-  const [selected,setSelected] = useState("featured")
+  const [selected,setSelected] = useState("featured1")
   const projectList = [
     {
       id: "featured1",
-      title: "Featured"
-    },
-    {
-      id: "featured2",
-      title: "Featured"
-    },
-    {
-      id: "featured3",
-      title: "Featured"
-     },
-    {
-      id: "featured4",
-      title: "Featured"
-    },
-    {
-      id: "featured5",
-      title: "Featured"
+      title: "My Projects"
     }
   ]
   return (
@@ -40,7 +24,7 @@ export default function Portfolio() {
           return ( 
                      <div className="item">
                         <img src={item.img} alt="" />
-                        <h3>{item.title}</h3>
+                        <h3><a href={item.gh} target="_blank">{item.title}</a></h3>
                     </div>
                     )
         })}
