@@ -32,7 +32,7 @@ export const featuredPortfolio = [
     {
         id : 6 ,
         title : "Portfolio Repository",
-        img : "",
+        img : "https://github.com/MohamedBoutaieb/personal-portfolio/blob/main/public/assets/site.png?raw=true",
         gh:"https://github.com/MohamedBoutaieb/personal-portfolio"
     } ,   
 ]

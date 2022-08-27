@@ -125,6 +125,10 @@
                     font-weight: 600;
                     text-decoration: underline;
                     cursor: pointer;
+                    a{
+                        text-decoration: none;
+                        color: inherit;
+                    }
                 }
             }
 
@@ -139,6 +143,8 @@
                 img {
                     width: 400px;
                     height: 100%;
+                   
+                    box-shadow:5px 5px 5px  grey ;
                     transform: translateX(30px) rotate(-10deg);
                 }
             }
