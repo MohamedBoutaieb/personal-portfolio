@@ -9,7 +9,7 @@ export default function Topbar(props) {
           <a href="#intro" className="logo"><Home className="Home"/></a>
           <div className="itemContainer">
             <Person className="icon"/>
-            <span> +216 55 3366 389</span>
+            <span> +216 55 366 389</span>
           </div>
           <div className="itemContainer">
             <Mail className="icon"/>
