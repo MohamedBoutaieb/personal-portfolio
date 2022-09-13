@@ -42,7 +42,7 @@ export default function Works() {
       icon: <Group/>,
       title:"IEEE member 2019-2022"
       ,desc:"3 years full of associative life, various experiences and events managements and participations",
-      img:"https://scontent.ftun10-1.fna.fbcdn.net/v/t39.30808-6/243352176_4518651261506741_4332306842444445477_n.png?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=JpSTaOU68n4AX_7ljEG&_nc_ht=scontent.ftun10-1.fna&oh=00_AT-bnb6vwY5IMCvXxp-xgeZd3_0fXfprN6zxtLiD55M7tg&oe=630F8642",
+      img:"https://scontent.ftun9-1.fna.fbcdn.net/v/t39.30808-6/243352176_4518651261506741_4332306842444445477_n.png?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=IK5iXFUrKjUAX-FVxUS&_nc_ht=scontent.ftun9-1.fna&oh=00_AT9UJmhcfM50dLgRxd1MJSfCShhXY6NabXAz0kLrXMMGGA&oe=63254702",
       about:"http://www.insat.rnu.tn/Fr/accueil_46_34"
     },
   ]
