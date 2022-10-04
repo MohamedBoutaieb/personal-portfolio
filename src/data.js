@@ -25,9 +25,9 @@ export const featuredPortfolio = [
     }  ,
     {
         id : 5 ,
-        title : "Js Calculator",
-        gh : "https://mohamedboutaieb.github.io/calculator-js/",
-        img:"https://github.com/MohamedBoutaieb/calculator-js/blob/main/caclulator.png?raw=true"
+        title : "Django Project",
+        gh : "https://github.com/MohamedBoutaieb/Django-app",
+        img:"https://lh6.googleusercontent.com/rU8dZ0x67y63AeujFhM79UG_I3ZagEqTmDffagrUVuBI5eXPHtW2Z7zP1KU1MLKtl0wU5eNS_QHU-9v3GUJgxlKYeAR1yKADY8xCj7xMrpL8z9Rr2Zde9_OGsmXTigvBr7DEWggV"
     } ,   
     {
         id : 6 ,
