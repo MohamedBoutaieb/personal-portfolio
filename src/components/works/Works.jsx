@@ -95,12 +95,12 @@ export default function Works() {
       <img
         src="assets/arrow.png"
         className="arrow right"
-        onClick={() => setCurrentSlider((currentSlider + 1) % data.length)}
+        onClick={() => setCurrentSlider((currentSlider + 1) % (data.length-1))}
       />
       <img
         src="assets/arrow.png"
         className="arrow left"
-        onClick={() => setCurrentSlider((currentSlider - 1 + data.length) % data.length)}
+        onClick={() => setCurrentSlider((currentSlider - 1 + 7) % (7))}
       />
     </div>
   );
