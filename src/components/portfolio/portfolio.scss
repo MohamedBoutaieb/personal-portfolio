@@ -6,8 +6,8 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  height:100%;
   position: relative;
-  gap: 3vh;
   .waves1 {
     position: absolute;
     top: 0;
@@ -61,7 +61,7 @@
   }
   .container {
     width: 60vw;
-    height: 50vh;
+    height: 60vh;
     // border:1px solid black;
     display: flex;
     align-items: center;

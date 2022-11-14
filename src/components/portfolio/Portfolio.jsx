@@ -17,22 +17,26 @@ export default function Portfolio() {
   ];
   return (
     <div className="portfolio" id="portfolio">
-   
- 
       <Wave
-      className="waves1"
-      fill="#15023a"
-      paused={false}
-      options={{height: 80,amplitude: 20, speed: 0.15, points: 5}}
+        className="waves1"
+        fill="#15023a"
+        paused={false}
+        options={{ height: 80, amplitude: 20, speed: 0.15, points: 5 }}
       ></Wave>
-       <Wave
-      className="waves2"
-      fill="#15023a"
-      paused={false}
-      options={{height: 80,width: 100,amplitude: 50, speed: 0.15, points: 5}}
+      <Wave
+        className="waves2"
+        fill="#15023a"
+        paused={false}
+        options={{
+          height: 80,
+          width: 100,
+          amplitude: 50,
+          speed: 0.15,
+          points: 5,
+        }}
       ></Wave>
       <h1>Portfolio</h1>
-      
+
       <ul>
         {projectList.map((item) => (
           <PortfolioList
