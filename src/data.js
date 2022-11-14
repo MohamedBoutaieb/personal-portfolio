@@ -35,4 +35,10 @@ export const featuredPortfolio = [
         img : "https://github.com/MohamedBoutaieb/personal-portfolio/blob/main/public/assets/site.png?raw=true",
         gh:"https://github.com/MohamedBoutaieb/personal-portfolio"
     } ,   
+    {
+        id : 7 ,
+        title : "Kotlin App",
+        img : "https://github.com/MohamedBoutaieb/StudentsList-Kotlin/blob/main/kotlin.png?raw=true",
+        gh:"https://github.com/MohamedBoutaieb/StudentsList-Kotlin"
+    } , 
 ]
