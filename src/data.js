@@ -44,7 +44,7 @@ export const featuredPortfolio = [
     {
         id : 8 ,
         title : "Scala App",
-        img : "https://github.com/MohamedBoutaieb/StudentsList-Kotlin/blob/main/kotlin.png?raw=true",
+        img : "https://github.com/MohamedBoutaieb/personal-portfolio/blob/main/public/assets/scala.png?raw=true",
         gh:"https://github.com/MohamedBoutaieb/scala-mini-game"
     } , 
 ]

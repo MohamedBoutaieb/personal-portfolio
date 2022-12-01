@@ -11,7 +11,7 @@ export default function Works() {
       icon: <Work />,
       title: "Internship at Cognira, summer 2022",
       desc: "Backend Internship about creating a notification Api between Slack and the Companie's main Software",
-      img: "https://fabskill.com/assets/img/bus-logo/cropped/508_1607963253.png",
+      img: "https://github.com/MohamedBoutaieb/personal-portfolio/blob/main/public/assets/cognira.png?raw=true",
       about: "https://cognira.com/",
     },
 
