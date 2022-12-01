@@ -50,7 +50,7 @@ export default function Portfolio() {
         {featuredPortfolio
           .filter(
             (item) =>
-              item.id >= (selected - 1) * 6 + 1 && item.id < selected + 6
+              item.id >= (selected - 1) * 6 + 1 && item.id < selected * 6 + 1
           )
           .map((item) => {
             return (
